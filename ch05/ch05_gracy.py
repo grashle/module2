@@ -44,30 +44,29 @@
 #    def __init__(self, habitat, age=1.0):
 #        self.habitat=habitat
 #        self.age=age
-#
-#class Dog(Animal):
-#    def bark(self):
-#        print('Woof!')
-#        
-#class Cat(Animal):
-##    def __init__ (self, habitat, age=1.0, furballs):
-##        self.furballs=furballs
-##       # Animal.__init__(self, furballs)
-##    #    def __init__ (self, furballs=3):
-###        self.furballs=furballs
-##    def __init__(self, furballs=1.0):
-##        self.furballs=furballs
-#    def cough(self):
-#        print('coughed up', self.furballs, 'furballs!')             
-#    def meow(self):
-#        print ('Meow')
-#    def climb(self):
-#        print('cat climbs curtain')
-#    def milk(self):
-#        print('cat drinks milk')
-#        
-##furballs=input('type a number:')
-#        
+
+class Dog(Animal):
+    def bark(self):
+        print('Woof!')
+        
+class Cat(Animal):
+    def __init__ (self, habitat, age=1.0, furballs):
+        self.furballs=furballs
+       # Animal.__init__(self, furballs)
+      
+#    def __init__ (self, furballs=3):
+#        self.furballs=furballs
+    def cough(self):
+        print('coughed up', self.furballs, 'furballs!')             
+    def meow(self):
+        print ('Meow')
+    def climb(self):
+        print('cat climbs curtain')
+    def milk(self):
+        print('cat drinks milk')
+        
+#furballs=input('type a number:')
+        
 #Snoopy=Dog('kennel', age=5.0)
 #Snoopy.bark()
 #Snoopy.eat()
@@ -88,6 +87,8 @@
 #
 #print(frank.habitat)
 #print(frank.age)
+
+import sys
 class Animal():
     def eat(self):
         print('yum')
@@ -101,7 +102,9 @@ class CleanRobot(Robot):
     def clean(self):
         print('I vacuum dust')
 class SuperRobot():
-    def __init__(self):
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
         self.o1 = Robot()
         self.o2 = Dog()
         self.o3 = CleanRobot()
@@ -113,5 +116,11 @@ class SuperRobot():
         return self.o2.bark()
     def clean(self):
         return self.o3.clean()
-machineDog=SuperRobot()
+name=sys.argv[1]
+age=sys.argv[2]
+
+print(name)
+print(age)
+machineDog=SuperRobot(name,age)
 machineDog.move()
+

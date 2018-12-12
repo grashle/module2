@@ -5,6 +5,7 @@ Created on Thu Nov 29 12:20:06 2018
 @author: 612383423
 """
 """
+import sys
 print("What's your name? ")
 name=input().title()
 print("Hello "+ "{}! where are you from, {}?".format(name, name))
@@ -15,6 +16,7 @@ print("wow! i am from {} too, {}!".format(location, name))"""
 def hello_world():
     print("Hello World!")
     name_print()
+    
 
 def name_print():
     print("computer says: what is your name?")
@@ -29,3 +31,4 @@ def name_print():
     
 hello_world()    
 
+#name=sys.argv[1]
