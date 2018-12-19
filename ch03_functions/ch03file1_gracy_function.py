@@ -27,10 +27,7 @@ def add_two_numbers (num1, num2):
 def hello_world_2args (c,d):
     print ("{} {}".format(c,d))
 
-a1 ='hello'
-b1='world'
-a2='love'
-b2 = 'coding'
+
         
 # task 5 
 def convert_temp():

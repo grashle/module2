@@ -4,6 +4,7 @@ Created on Tue Dec 11 13:55:47 2018
 
 @author: 612383423
 """
+### Chapter 8: Mobile Data Bundle purchase program
 
 def DataBundlePurchase(truePasscode, balance):
     if passwordCheck(truePasscode):
@@ -27,7 +28,7 @@ def DataBundlePurchase(truePasscode, balance):
         else:
             return 'wrong option selected'
     else: 
-        return 'wrong password'
+        return 'Wrong password'
     
 def passwordCheck(truePasscode):
     attempt = input('please enter your 4-digit password: ')

@@ -5,8 +5,9 @@ Created on Mon Dec 17 10:21:41 2018
 @author: 612383423
 """
 phonebook_dict={}
-
-def ask_user():
+count=0
+def ask_user(count):
+    
     name = input('what\'s your name? ')
     phone_no= input('what are the last three digits of your phone number? ')
     lucky_no = int(input ('lucky number? '))
@@ -15,13 +16,17 @@ def ask_user():
     age = int(input('what year are you born? '))
     QueenAgeDiff = (age-1926)
     phonebook_dict[name.title()]=(phone_no, lucky_no, postcode.upper(), town.title(), age, QueenAgeDiff)
-    yes_no = input('add another person? y/n ')       
-    while yes_no == 'y':
-        ask_user()
-        return phonebook_dict
-    return True    
+    yes_no = input('add another person? y/n ')  
+    max_people = 3
+    if count < max_people:
+        while yes_no == "y" :
+            count+=1
+            print(count)
+            ask_user(count)
+            return phonebook_dict
+    return True  
     
-ask_user()
+ask_user(count)
 
 #phonebook_dict={'Gracy': ('0121', 12, 'B43', 'Birmingham'), 'Dave': ('0122', 7, 'B21', 'Yardley'), 'Matt': ('1244', 56, 'S23', 'Sheffield'), 'Sally': ('4456', 9, 'E17', 'London')}
 
