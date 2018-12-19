@@ -92,3 +92,8 @@ def divide (a,b):
 
 from pylab import sin, cos, pi
 #print (sin(2.2))
+
+import datetime
+import time
+
+print ("date and time", datetime.datetime.now())
