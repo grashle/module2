@@ -145,11 +145,3 @@ def statement():
 
 statement()
 
-#statement(o)
-
-#susie=Friend('susie', 40, 'german')
-#tom = Friend('tom',30, 'french')
-#susie.languageGreetings()
-#tom.languageGreetings()
-#
-#gracy = Friend(name, age, language)

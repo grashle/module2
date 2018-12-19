@@ -4,7 +4,7 @@ Created on Tue Dec  4 15:21:06 2018
 
 @author: 612383423
 """
-
+### Exercises fom Learn Python the Hard Way on conditionals
 #11, 12, 27, 29, 30, 31
 
 tabby_cat = ("\tI'm tabbed in.")
